@@ -1,0 +1,44 @@
+{
+  "name": "@leismore/is_email_duplicate",
+  "version": "1.0.0",
+  "description": "A Node.js application for testing if a user account exists and was activated",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "private": true,
+  "scripts": {
+    "start-server": "ts-node ./src/index.ts",
+    "test": "start-server-and-test start-server http://localhost:8083/api/is_email_duplicate 'mocha ./test/test.ts'",
+    "build": "tsc --build",
+    "clean": "tsc --build --clean"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leismore/is_email_duplicate.git"
+  },
+  "keywords": [
+    "Email",
+    "Duplicate",
+    "User",
+    "Account"
+  ],
+  "author": {
+    "name": "Kyle Chine",
+    "email": "kyle.chine@leismore.co",
+    "url": "https://kyle-chine.leismore.co"
+  },
+  "license": "AGPL-3.0-only",
+  "bugs": {
+    "url": "https://github.com/leismore/is_email_duplicate/issues"
+  },
+  "homepage": "https://github.com/leismore/is_email_duplicate#readme",
+  "devDependencies": {
+    "@types/chai": "^4.3.0",
+    "@types/mocha": "^9.1.0",
+    "@types/node": "~16.11.26",
+    "chai": "^4.3.6",
+    "mocha": "^9.2.2",
+    "start-server-and-test": "^1.14.0",
+    "ts-node": "^10.7.0",
+    "typescript": "~4.5.5"
+  }
+}
