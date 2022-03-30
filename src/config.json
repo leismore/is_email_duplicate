@@ -1,0 +1,40 @@
+{
+  "app":
+  {
+    "projectName":  "is_email_duplicate",
+    "appID":        "58bfca06-8aad-4339-8622-818f183e89cc",
+    "host":         "localhost",
+    "port":         "8083",
+    "backlog":       511,
+    "domain":       "localhost",
+    "publicPort":   "8083",
+    "ssl":          false
+  },
+
+  "auth_app_self":
+  {
+    "appID":   "29f4a510-9c34-40ad-a194-4ff0f5ace9f3",
+    "api":
+    {
+      "author": {
+        "url": "http://localhost:8080/api/authorizer"
+      }
+    }
+  },
+
+  "couchdb":
+  {
+    "designName":   "is_email_duplicate",
+    "dbPrefix":     "lmos"
+  },
+
+  "api":
+  {
+    "baseURL": "/api/",
+    "createUser": {
+      "url":          "is-email-duplicate",
+      "methods":      ["OPTIONS", "HEAD", "GET", "POST"],
+      "timeout":      10000
+    }
+  }
+}

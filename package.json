@@ -7,7 +7,7 @@
   "private": true,
   "scripts": {
     "start-server": "ts-node ./src/index.ts",
-    "test": "start-server-and-test start-server http://localhost:8083/api/is_email_duplicate 'mocha ./test/test.ts'",
+    "test": "start-server-and-test start-server http://localhost:8083/api/is-email-duplicate 'mocha ./test/test.ts'",
     "build": "tsc --build",
     "clean": "tsc --build --clean"
   },
