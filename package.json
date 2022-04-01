@@ -42,6 +42,8 @@
     "typescript": "~4.5.5"
   },
   "dependencies": {
-    "@leismore/lmerror": "^6.0.3"
+    "@leismore/lmerror": "^6.0.3",
+    "@leismore/unknown2error": "^1.0.0",
+    "nano": "^10.0.0"
   }
 }
