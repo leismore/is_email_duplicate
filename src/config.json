@@ -31,7 +31,7 @@
   "api":
   {
     "baseURL": "/api/",
-    "createUser": {
+    "isEmailDuplicate": {
       "url":          "is-email-duplicate",
       "methods":      ["OPTIONS", "HEAD", "GET", "POST"],
       "timeout":      10000

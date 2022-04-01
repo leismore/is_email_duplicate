@@ -42,6 +42,7 @@
     "typescript": "~4.5.5"
   },
   "dependencies": {
+    "@leismore/all_handler": "^3.0.2",
     "@leismore/lmerror": "^6.0.3",
     "@leismore/response": "^5.0.2",
     "@leismore/unknown2error": "^1.0.0",
