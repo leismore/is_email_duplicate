@@ -28,6 +28,7 @@ async function is_dup_email(
     let ids:string[] = [];
     let dbUser:nano.DocumentScope<User>;
     let dbUserAuth:nano.DocumentScope<UserAuth>;
+    email = email.toLowerCase();
 
     // Use the databases
     try {
